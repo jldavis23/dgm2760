@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ----------- HEADER ----------- */
+
+header {
+    font-family: 'Slabo 27px', serif;
+    max-width: 60rem;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.356), rgba(20, 20, 20, 0.301)), url("../images/brooke-lark-IDTEXXXfS44-unsplash.jpg");
+    background-position: center;
+    height: 200px;
+}
+
+/* linear-gradient(rgba(248, 196, 148, 0.5), rgba(134, 54, 0, 0.5)), */
+
+header h1 {
+    color: #eee;
+    padding: 16px 0 0 16px;
+    font-size: 3rem;
+    /* text-shadow: 2px 2px rgba(0, 0, 0, 0.5); */
+}
+
+header h2 {
+    color: #eee;
+    padding-left: 16px;
+    /* text-shadow: 2px 2px rgba(0, 0, 0, 0.5); */
+}
+
+/* ----------- MAIN ----------- */
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 28px;
+    font-family: 'Slabo 27px', serif;
+    padding: 0.5rem 1rem;
+    background-color: #e68d34;
+    color: #fff;
+}
+
+.content {
+    padding: 0 1rem 1rem 1rem;
+}
+
+main h3 {
+    font-family: 'Slabo 27px', serif;
+    padding: 0.5rem 0;
+    color: rgb(226, 131, 6)
+}
+
+main ul {
+    margin-left: 2rem;
+}
+
+main ul li {
+    list-style-type: none;
+}
+
+main ul li:before {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+    margin-right: 0.5rem;
+    color: #d16219;
+}
+
+/* ----------- FOOTER ----------- */
+
+footer {
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: #e68d34;
+}
+
+footer p {
+    color: #fff;
+    padding: 0.5rem 1rem;
+}

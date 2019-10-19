@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>01 Joe's Bed and Breakfast</title>
+</head>
+<body>
+    <header>
+        <h1 id="company"></h1>
+        <h2 id="slogan"></h2>
+    </header>
+
+    <main>
+        <h1>Welcome to Joe's</h1>
+
+        <div class="content">
+            <h3>What I Learned</h3>
+            <ul>
+                <li>Build a simple webpage with a header, main, and footer</li>
+                <li>Find and correctly resize an image to be loaded into the header using CSS</li>
+                <li>Use JavaScript to insert text into an HTML element</li>
+                <li>Use JavaScript to insert the current date into a web page</li>
+                <li>Style a page using CSS</li>
+                <li>Push code to a GitHub repository</li>
+                <li>Deploy a webpage using Netlify</li>
+            </ul>
+    
+            <h3>Today is
+                <script>
+                    let thedate = new Date()
+                    document.write(thedate.toLocaleDateString())    
+                </script>
+            </h3>
+
+            <p id="greeting"></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Assignment for DGM2760 by Jacey Davis</p>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
