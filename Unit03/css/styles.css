@@ -1,0 +1,99 @@
+
+header, main, footer {
+    max-width: 70rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+/* ------- HEADER ------- */
+
+header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("../images/header.jpg");
+    background-position: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+
+header h2 {
+    color: #fff;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* ------- MAIN ------- */
+main {
+    background-color: #007F55;
+    padding: 10px 2vw;
+}
+
+main h1 {
+    /* margin: 0; */
+}
+
+section.game-wrapper {
+    padding: 10px 2vw;
+    background-color: #fff;
+    color: #333;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 265px;
+}
+
+section.game-wrapper div {
+    text-align: center;
+}
+
+section.game-wrapper h2 {
+    margin: 0 0 6px 0;
+}
+
+div.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+div.input-area input {
+    margin: 5px 0;
+    height: 30px;
+}
+
+div.input-area button {
+    height: 30px;
+    border: none;
+    background-color: #00BB7E;
+    color: #fff;
+    font-size: 12px;
+    transition: 0.2s;
+}
+
+section.input-area button:hover {
+    background-color: #00a76f;
+}
+
+/* ------- FOOTER ------- */
+
+footer {
+    background-color: #00BB7E;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03 Guessing Game</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <h2></h2>
+    </header>
+
+    <main>
+        <h1>Number Guessing Game</h1>
+        <h2>Instructions</h2>
+        <p>Try to guess a random number between 1 and 15 (inclusive) in as few tries as possible. You will be awarded a ribbon for you skills. Refresh the page to play again. Good luck!</p>
+
+        <section class="game-wrapper">
+            <div>
+                <h2>PLAY</h2>
+                <div class="input-area">
+                    <input id="guess" type="number" placeholder="number">
+                    <button onclick="evalGuess()">GUESS</button>
+                </div>
+            </div>
+                
+            <div>
+                <h2>TRYS</h2>
+                <div id="trys"></div>
+            </div>
+            
+            <div>
+                <h2>FEEDBACK</h2>
+                <div id="feedback"></div>
+            </div>
+            
+            <div>
+                <h2>AWARD</h2>
+                <div id="ribbon"></div>
+            </div>
+        </section>
+
+        <section class="learned">
+            <h2>What I Learned</h2>
+            <ul>
+                <li>Implement functions</li>
+                <li>Implement a multi level if-then-else</li>
+                <li>Use innerText to provide user feedback</li>
+                <li>Implement a switch statement</li>
+                <li>Dynamically load a graphic</li>
+                <li>Create and append an image element</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        Assignment for DGM2760 by Jacey Davis
+    </footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
