@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>05 Arborist</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-wrapper">
+    <header>
+        <img src="images/tree-logo.png">
+        
+        <div>
+            <h1>The Arborist Project</h1>
+            <h2>Plant a Tree. Save the World.</h2>
+        </div>
+    </header>
+    </div>
+
+    <div class="nav-wrapper">
+        <nav>
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#" class="active">PLANT TREES</a></li>
+                <li><a href="#">GET INVOLVED</a></li>
+                <li><a href="#">SHOP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div>
+            <h2>Plant Trees</h2>
+            <p>Thousands of acres of forest are lost every single day, affecting wildlife, ecosystems, and climate. You can help combat this mass loss by helping us plant trees in affected areas all over the globe. With your donations, we can reduce the effects of deforestation.
+            </p>
+            <p>Use the buttons below to create a list of the trees you wish for us to plant.</p>
+        </div>
+
+        <div class="adding-trees">
+            <div>
+                <h3>CHOOSE TREES TO PLANT</h3>
+                <button id="add_redwood">ADD A REDWOOD TREE TO THE END</button>
+                <button id="add_pear">ADD A PEAR TREE TO THE START</button>
+
+                <h3>REMOVE TREES</h3>
+                <button id="remove_tree1">REMOVE THE FIRST TREE</button>
+                <button id="remove_tree2">REMOVE THE SECOND TREE</button>
+                <button id="remove_tree3">REMOVE THE LAST TREE</button>
+
+                <h3>MANIPULATE THE TREE LIST</h3>
+                <button id="sort_trees">SORT THE TREES ALPHABETICALLY</button>
+                <button id="lowercase_trees">MAKE ALL TREES LOWERCASE</button>
+
+                <h3>DISPLAY SPECIFIC TREES</h3>
+                <button id="display_tree3">DISPLAY THE NAME OF TREE 3</button>
+                <button id="display_tree4">DISPLAY THE NAME OF THREE 4</button>
+            </div>
+
+            <div class="showing-trees">
+                <h3>YOUR TREE LIST</h3>
+                <div id="displayResults"></div>
+
+                <h3>MESSAGES</h3>
+                <div id="error"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Assignment for DGM2760 by Jacey Davis
+    </footer>
+    
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
