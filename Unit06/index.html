@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>06 Story</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="picture"></div>
+        <div>
+            <h1>Story Generator</h1>
+
+            <div class="input-areas">
+                <div>
+                    <h3>3 NOUNS</h3>
+                    <textarea id="nouns"></textarea>
+                </div>
+
+                <div>
+                    <h3>4 ADJECTIVES</h3>
+                    <textarea id="adjectives"></textarea>
+                </div>
+
+                <div>
+                    <h3>3 VERBS</h3> 
+                    <textarea id="verbs"></textarea>
+                </div>
+            </div>
+
+            <button onclick="tellStory()">Tell My Story</button>
+
+            <h2>Your Story</h2>
+            <div id="storyParagraph"></div>
+        </div>
+    </main>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
