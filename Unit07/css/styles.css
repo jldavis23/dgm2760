@@ -66,10 +66,35 @@ main h2 {
     margin-top: 0;
 }
 
-.build-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
+@media only screen and (max-width: 725px) {
+    button {
+        border: none;
+        background-color: #D04343;
+        border-radius: 3px;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+        margin: 10px auto;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 726px) {
+    .build-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+    }
+
+    button {
+        border: none;
+        background-color: #D04343;
+        border-radius: 3px;
+        color: #fff;
+        padding: 10px;
+        font-size: 16px;
+    }
+    
 }
 
 main div.option-cards {
@@ -120,15 +145,6 @@ main div.option-cards {
 
 .show {
     display: block;
-}
-
-button {
-    border: none;
-    background-color: #D04343;
-    border-radius: 3px;
-    color: #fff;
-    padding: 10px;
-    font-size: 16px;
 }
 
 button:hover {
