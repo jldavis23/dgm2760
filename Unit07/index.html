@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>07 Pizza</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800|Quicksand:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>Pizza Emporium</h1>
+    </header>
+
+    <div class="nav-wrapper">
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a class="active" href="#">BUILD A PIZZA</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <main>
+        <h1>BUILD A PIZZA</h1>
+        <p>Build your perfect pizza using the options below, and then choose ORDER THIS PIZZA for us to make it for you, or GET SHOPPING LIST for a list of ingredients to make it yourself.</p>
+
+        <div class="build-section">
+            <div>
+                <div class="option-cards">
+                    <h2>CRUST OPTIONS</h2>
+                    <input type="radio" id="thin" name="crust" value="thin" checked>
+                    <label for="thin">Thin</label>
+                    <input type="radio" id="thick" name="crust" value="thick">
+                    <label for="thick">Thick</label>
+                </div>
+                
+                <div class="option-cards">
+                    <h2>TOPPING OPTIONS</h2>
+                    <input type="radio" id="sausage" name="topping" value="sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="radio" id="pepperoni" name="topping" value="pepperoni" checked>
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+
+                <div class="option-cards">
+                    <h2>SIZE OPTIONS</h2>
+                    <input type="radio" id="small" name="size" value="small" checked>
+                    <label for="small">Small</label>
+                    <input type="radio" id="large" name="size" value="large">
+                    <label for="large">Large</label>
+                </div>
+            </div>
+
+            <div class="pizza-picture-section">
+                <div class="pizza">
+                    <div id="pizza-crust" class="crust-thin">
+                        <div id="pizza-cheese">
+                            <img id="pizza-pepperoni" src="images/pepperoni.png" alt="pepperoni" class="show">
+                            <img id="pizza-sausage" src="images/sausage.png" alt="sausage" class="hide">
+                        </div>
+                    </div>
+                </div> 
+
+                <p id="message"></p>
+                
+                <div>
+                    <button id="build">ORDER THIS PIZZA</button>
+                    <button id="shopping">GET SHOPPING LIST</button>
+                </div>  
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Assignment for DGM2760 by Jacey Davis
+    </footer>
+    
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
