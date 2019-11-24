@@ -1,0 +1,85 @@
+header, main, footer {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #21293a;
+}
+
+/* -------- HEADER --------*/
+
+header {
+    background-image: url('../images/graveyard.jpg');
+    background-position: center;
+    height: 100px;
+}
+
+/* -------- MAIN --------*/
+
+main {
+    color: #eee;
+    padding: 0 2vw;
+}
+
+main h2 {
+    color: #8596b9;
+}
+
+main div {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+main button {
+    background-color: #21293a;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    text-align: left;
+} 
+
+@media only screen and (min-width: 43rem) {
+    main button {
+        width: 50%;
+    }
+}
+
+.correct {
+    border: 1px solid #008000;
+}
+
+.correct::after {
+    content: '\2713';
+    float: right;
+    color: green;
+}
+
+.incorrect {
+    border: 1px solid #ff5656;
+}
+
+.incorrect::after {
+    content: '\2717';
+    float: right; 
+    color: #ff5656;
+}
+
+/* -------- FOOTER --------*/
+
+footer {
+    color: #8596b9;
+    margin-top: 20px;
+    padding: 0 2vw;
+    font-size: 0.9rem;
+}
