@@ -1,0 +1,207 @@
+body {
+    background-color: #122433;
+    background-image: url('../images/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    color: #eee;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 2vw;
+}
+/* --------- HEADER/NAV --------- */
+
+/* Small Screens */
+@media only screen and (max-width: 650px) {
+    header {
+        max-width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* align-items: center;
+        justify-content: space-between; */
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 650px) {
+    header {
+        max-width: 60rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+header h1 {
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    margin-left: 2vw;
+}
+
+/* --------- MAIN --------- */
+
+main {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 650px) {
+    main ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 650px) {
+    main ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+}
+
+main ul li {
+    flex-basis: 33%;
+    margin: 5px;
+}
+
+main ul li a {
+    display: block;
+    text-decoration: none;
+    color: #eee;
+    background-color: #ce3737;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+main ul li a:hover {
+    background-color: #ad2c2c;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 650px) {
+    .hotel-listing {
+        display: none;
+        grid-template-rows: 1fr 1fr;
+        background-color: #eee;
+        color: #333;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+}
+
+/* Large Screens */
+@media only screen and (min-width: 650px) {
+    .hotel-listing {
+        display: none;
+        grid-template-columns: 1fr 1fr;
+        background-color: #eee;
+        color: #333;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+}
+.show {
+    display: grid;
+}
+
+.hotel-listing #picture {
+    background-repeat: no-repeat;
+}
+
+.hotel-listing div {
+    padding: 3%;
+}
+
+.hotel-listing h2 {
+    margin: 0;
+    color: #2f567c;
+}
+
+.hotel-listing p#address {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #979797;
+}
+
+.hotel-listing #stars {
+    color: #cfc30f;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.hotel-listing #stars #rating {
+    color: #cfc30f;
+}
+
+.hotel-listing h3 {
+    margin-bottom: 3px;
+    color: #2f567c;
+}
+
+.hotel-listing p#aboutHotel {
+    margin: 0;
+    color: #333;
+}
+
+.hotel-listing p {
+    color: #2f567c;
+}
+
+.hotel-listing span {
+    color: #333;
+}
+
+.hotel-listing #amenities {
+    display: flex;
+    padding: 0;
+}
+
+.hotel-listing #amenities p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 20px 0 0;
+}
+
+.hotel-listing #amenities p i {
+    display: block;
+    color: #333;
+}
+
+.hotel-listing #amenities p span {
+    font-size: 0.9rem;
+}
+
+
+
+/* --------- FOOTER --------- */
+
+

@@ -1,0 +1,34 @@
+{
+    "hotels": [
+        {
+            "name": "Marriott",
+            "about": "Assertively provide access to high standards in technologies without covalent niche markets. Progressively deliver reliable initiatives vis-a-vis leading-edge alignments.",
+            "rooms": "50",
+            "amenities": ["Gym", "Pool", "Parking", "Wifi"],
+            "roomTypes": ["King", "Queen", "Double"],
+            "address": "258 Broad Street, UT",
+            "rating": "4.3",
+            "picture": "room1.jpg"
+        }, 
+        {
+            "name": "Sheraton",
+            "about": "Intrinsicly integrate exceptional deliverables whereas user friendly bandwidth. Dynamically scale equity invested outsourcing without vertical opportunities.",
+            "rooms": "30",
+            "amenities": ["Pool", "Wifi"],
+            "roomTypes": ["King", "Queen"],
+            "address": "23 Main Plaza, VA",
+            "rating": "3.9",
+            "picture": "room2.jpg"
+        },
+        {
+            "name": "Hilton",
+            "about": "Objectively productize installed base architectures after standards compliant platforms. Energistically aggregate sticky paradigms via synergistic outside the box thinking.",
+            "rooms": "42",
+            "amenities": ["Gym", "Pets", "Wifi", "Pool"],
+            "roomTypes": ["King", "Queen", "Accessible"],
+            "address": "102 Long View, NY",
+            "rating": "4.6",
+            "picture": "room3.jpg"
+        }
+    ]
+}
