@@ -89,9 +89,8 @@ main ul li {
     margin: 5px;
 }
 
-main ul li a {
-    display: block;
-    text-decoration: none;
+main ul li button {
+    width: 100%;
     color: #eee;
     background-color: #ce3737;
     padding: 20px;
@@ -99,9 +98,12 @@ main ul li a {
     text-align: center;
     font-weight: 500;
     transition: 0.2s;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
 }
 
-main ul li a:hover {
+main ul li button:hover {
     background-color: #ad2c2c;
 }
 

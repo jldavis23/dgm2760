@@ -1,7 +1,7 @@
 async function getHotelData() {
     try {
-        const response = await fetch('../hotel.json')
-        return await response.json() // Return the JSON object
+        const response = await fetch('./hotel.json')
+        return await response.json()
     } catch (error) {
         console.error(error)
     }
@@ -10,7 +10,7 @@ async function getHotelData() {
 let hotelData = {}
 getHotelData().then(data => hotelData = data)
 
-let hotelButtons = document.querySelectorAll('main a')
+let hotelButtons = document.querySelectorAll('main button')
 hotelButtons.forEach(button => {
     button.addEventListener('click', hotelInfo)
 })
@@ -23,7 +23,7 @@ function hotelInfo(event) {
     document.querySelector('.hotel-listing').classList.add('show')
     
     //displays the picture, hotel name, and address
-    document.querySelector("#picture").style.backgroundImage = `url(../images/${hotelChoice.picture})`
+    document.querySelector("#picture").style.backgroundImage = `url(./images/${hotelChoice.picture})`
     document.querySelector("#hotelName").textContent = `${hotelChoice.name} Hotel`
     document.querySelector("#address").textContent = hotelChoice.address
 
