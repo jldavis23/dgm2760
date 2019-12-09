@@ -1,0 +1,52 @@
+/* ----------- HEADER/NAV ----------- */
+header div {
+    display: flex;
+    justify-content: space-between;
+
+    h1 a {
+        text-align: left;
+    }
+
+    nav ul {
+        display: flex;
+
+        li a {
+            width: auto;
+            padding: 10px 0 10px 20px;
+        }
+    }
+}
+
+#menu-button {
+    display: none;
+}
+
+.hide-menu {
+    display: flex;
+}
+
+/* ----------- MAIN ----------- */
+
+main section {
+    padding: 47px 2vw 0 2vw;
+}
+
+section.welcome {
+    figure {
+        height: 523px;
+        background-image: url('../images/header-large.jpg');
+    }
+}
+
+#recipe-list, #favorite-recipes-list  {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+section#add-recipes-section {
+    input, textarea, select {
+        width: 75% !important;
+    }
+}
+
+/* ----------- FOOTER ----------- */

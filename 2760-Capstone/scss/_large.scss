@@ -1,0 +1,41 @@
+/* ----------- HEADER ----------- */
+
+/* ----------- NAV ----------- */
+
+/* ----------- MAIN ----------- */
+
+section.welcome {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2vw;
+
+    div {
+        align-self: center;
+        grid-area: auto;
+
+        a {
+            width: 75%;
+        }
+    }
+
+    figure {
+        background-position: left;
+    }
+}
+
+#recipe-list, #favorite-recipes-list  {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+}
+
+.recipe-text {
+    grid-template-columns: 1fr 2fr !important;
+}
+
+section#add-recipes-section {
+    input, textarea, select {
+        width: 50% !important;
+    }
+}
+
+/* ----------- FOOTER ----------- */

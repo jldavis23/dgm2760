@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cook Tasty | 2760 Capstone</title>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/kfj5wwr.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="#"><i class="fas fa-utensils"></i> Cook Tasty</a></h1>
+            <nav>
+                <button id="menu-button">MENU </button>
+                <ul id="main-navigation">
+                    <li><a href="#all-recipes-section">ALL RECIPES</a></li>
+                    <li><a href="#favorites-section">YOUR FAVORITES</a></li>
+                    <li><a href="#add-recipes-section">ADD RECIPES</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <div>
+                <h1>Hungry?</h1>
+                <p>You’ve come to the right place! Explore our vast list of recipes from breakfast to dessert. You’re sure to find something that will make your mouth water. Press the button below to begin!</p>
+                <a href="#all-recipes-section" id="view-recipes" class="button">VIEW ALL RECIPES</a>
+            </div>
+            <figure></figure>
+        </section>
+
+        <section id="all-recipes-section">
+            <h1>All Recipes</h1>
+            <!-- <h2>BREAKFAST</h2> -->
+
+            <div id="recipe-list">
+                Click VIEW ALL RECIPES
+            </div>
+        </section>
+
+         <section id="view-recipe-section">
+            <div class="recipe-content">
+                <figure id="recipe-img"><a id="close-button">&times;</a></figure>
+                <div class="recipe-text">
+                    <div class="ingredients">
+                        <h2>Ingredients</h2>
+                        <ul id="ingredient-list"></ul>
+                    </div>
+                    <div class="directions">
+                        <h1 id="recipe-name"></h1>
+                        <h2>Directions</h2>
+                        <p id="instructions-pgh"></p>
+                        <button id="add-to-favorites" class="button"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="favorites-section">
+            <h1>Your Favorites</h1>
+            <div id="favorite-recipes-list">
+                You have no favorite recipes yet
+            </div>
+        </section>
+
+        <section id="add-recipes-section">
+            <h1>Add Your Recipe</h1>
+            <p>Fill out the form below to add your recipe to the list!</p>
+            <form>
+                Recipe Name*<br>
+                <input id="new-recipe-name" type="text" name="recipe-name"> <br>
+
+                Category <br>
+                <select id="new-recipe-category" name="category">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="snack">Snack</option>
+                </select> <br>
+
+                Ingredients, separated by a comma<br>
+                <textarea id="new-recipe-ingredients" name="ingredients"></textarea> <br>
+
+                Instructions <br>
+                <textarea id="new-recipe-instructions" name="instructions"></textarea> <br>
+
+                Time <br>
+                <input id="new-recipe-time" type="text" name="time"> <br>
+
+                Image <br>
+                <input id="new-recipe-image" type="url" name="image"> <br>
+                *Required fields
+            </form>
+            <button id="submit-recipe" class="button">ADD RECIPE</button>
+        </section>
+       
+    </main>
+
+    <footer>
+        Capstone Project for DGM2760 by Jacey Davis
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
