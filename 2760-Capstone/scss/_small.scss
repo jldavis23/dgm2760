@@ -162,10 +162,30 @@ section.welcome {
 
 section#all-recipes-section {
 
-    h2 {
-        color: $accentColor;
-        font-family: lato, sans-serif;
-        margin: 0;
+    div div {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+
+        label {
+            border: 2px solid rgba(0,0,0,0);
+            padding: 10px;
+            border-radius: 15px;
+            color: $accentColor;
+            cursor: pointer;
+        }
+
+        label.checked {
+            border: 2px solid $accentColor;
+            color: $color1;
+        }
+
+        input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
@@ -208,6 +228,7 @@ section#all-recipes-section {
             font-size: 0.875rem;
             color: $color1;
             margin: 0;
+            font-family: lato, sans-serif;
         }
 
         p {

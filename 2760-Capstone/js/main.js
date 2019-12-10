@@ -26,6 +26,7 @@ let deleteChildNodes = (parentStr) => {
 let createRecipeCards = (recipe, container) => {
     let a = document.createElement('a')
     a.href = '#view-recipe-section'
+    a.id = `${recipe.name.replace(/ /g, "-")}-${container}`
     a.addEventListener('click', function() {
         showInstructions(recipe)
     })
@@ -75,16 +76,16 @@ let createRecipeCards = (recipe, container) => {
 
     // makes it so when you click the close button it takes you back to where you were
     a.addEventListener('click', function(){
-        document.querySelector('#close-button').href = `#${document.querySelector(container).parentNode.id}`
+        document.querySelector('#close-button').href = `#${a.id}`
     })
 }
 
 // UPDATE FAVORITES BUTTON
 let updateFavoriteButton = (recipe) => {
     if (favorites.indexOf(recipe) === -1) {
-        addFavoriteButton.innerHTML = '<i class="far fa-heart"></i> ADD TO FAVORITES'
+        return addFavoriteButton.innerHTML = '<i class="far fa-heart"></i> ADD TO FAVORITES'
     } else {
-        addFavoriteButton.innerHTML = '<i class="fas fa-heart"></i> REMOVE FROM FAVORITES'
+        return addFavoriteButton.innerHTML = '<i class="fas fa-heart"></i> REMOVE FROM FAVORITES'
     }
 }
 
@@ -126,6 +127,34 @@ document.querySelector('#view-recipes').addEventListener('click', function() {
         createRecipeCards(recipe, '#recipe-list')
     })
 })
+
+
+// SORTING RECIPE CARDS
+sortLabels = document.querySelectorAll('#all-recipes-section label')
+sortLabels.forEach(label => {
+    label.addEventListener('click', () => {
+        sortLabels.forEach(label => {
+            label.classList = ""
+        })
+        label.classList = "checked"
+
+        if (label.textContent === "All") {
+            deleteChildNodes('#recipe-list')
+            recipeData.forEach(recipe => {
+                createRecipeCards(recipe, '#recipe-list')
+            })
+        } else {
+            let newArray = recipeData.filter(recipe => recipe.category == label.textContent)
+            deleteChildNodes('#recipe-list')
+            newArray.forEach(recipe => {
+            createRecipeCards(recipe, '#recipe-list')
+            })
+        }
+
+        
+    })
+})
+
 
 
 // DISPLAYS RECIPE DETAILS

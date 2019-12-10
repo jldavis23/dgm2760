@@ -2,7 +2,7 @@
     "recipes": [
         {
           "name": "Spicy Arrabiata Penne",
-          "category": "dinner",
+          "category": "Dinner",
           "instructions": "1. Bring a large pot of water to a boil. Add kosher salt to the boiling water, then add the pasta. Cook according to the package instructions, about 9 minutes. <br><br>2. In a large skillet over medium-high heat, add the olive oil and heat until the oil starts to shimmer. Add the garlic and cook, stirring, until fragrant, 1 to 2 minutes. Add the chopped tomatoes, red chile flakes, Italian seasoning and salt and pepper to taste. Bring to a boil and cook for 5 minutes. <br><br>3. Remove from the heat and add the chopped basil. Drain the pasta and add it to the sauce. Garnish with Parmigiano-Reggiano flakes and more basil and serve warm." ,
           "ingredients": ["1lb penne rigate", "1/4 cup olive oil", "3 garlic cloves", "1 tin chopped tomatoes", "1/2 tsp red chile flakes", "1/2 tsp italian seasoning", "6 basil leaves", "sprinkling of Parmigiano-Reggiano"],
           "time": "30 min",
@@ -68,7 +68,7 @@
 
         {
             "name": "Salmon & Spinach with Tartare Cream",
-            "category": "dinner",
+            "category": "Dinner",
             "instructions": "1. Heat the oil in a pan, season the salmon on both sides, then fry for 4 mins each side until golden and the flesh flakes easily. Leave to rest on a plate while you cook the spinach.<br><br>2. Tip the leaves into the hot pan, season well, then cover and leave to wilt for 1 min, stirring once or twice. Spoon the spinach onto plates, then top with the salmon. Gently heat the crème fraîche in the pan with a squeeze of the lemon juice, the capers and parsley, then season to taste. Be careful not to let it boil. Spoon the sauce over the fish, then serve with lemon wedges.",
             "ingredients": ["1 tsp sunflower or vegetable oil", "2 skinless salmon fillet", "250g bag spinach", "2 tbsp reduced-fat crème fraîche", "juice ½ lemon", "1 tsp caper", "2 tbsp flat-leaf parsley, chopped", "lemon wedges, to serve"],
             "time": "30 min",
@@ -78,14 +78,69 @@
         },
 
         {
-            "name": "",
-            "category": "",
-            "instructions": "",
-            "ingredients": [],
-            "time": "",
-            "rating": "",
-            "image": "",
-            "source": ""
+            "name": "Grilled Cheese",
+            "category": "Lunch",
+            "instructions": "1. Preheat skillet over medium heat. Generously butter one side of a slice of bread. Place bread butter-side-down onto skillet bottom and add 1 slice of cheese. Butter a second slice of bread on one side and place butter-side-up on top of sandwich. Grill until lightly browned and flip over; continue grilling until cheese is melted. Repeat with remaining 2 slices of bread, butter and slice of cheese.",
+            "ingredients": ["4 slices white bread", "2 slices cheddar cheese", "3 Tbsp butter"],
+            "time": "20min",
+            "rating": "5",
+            "image": "grilledcheese.jpg",
+            "source": "All Recipes.com"
+        }, 
+
+        {
+            "name": "BLT Sandwich",
+            "category": "Lunch",
+            "instructions": "1. Cook the bacon in a large, deep skillet over medium-high heat until evenly browned, about 10 minutes. Drain the bacon slices on a paper towel-lined plate. <br><br>2. Arrange the cooked bacon, lettuce, and tomato slices on one slice of bread. Spread one side of remaining bread slice with the mayonnaise. Bring the two pieces together to make a sandwich.",
+            "ingredients": ["4 slices bacon", "2 slices bread, toasted", "2 leaves lettuce", "1 Tbsp mayonnaise", "2 slices tomato"],
+            "time": "15min",
+            "rating": "4",
+            "image": "blt.jpg",
+            "source": "All Recipes.com"
+        }, 
+
+        {
+            "name": "Chocolate Chip Cookies",
+            "category": "Dessert",
+            "instructions": "1. Preheat oven to 350 degrees F (175 degrees C). <br><br>2. Cream together the butter, white sugar, and brown sugar until smooth. Beat in the eggs one at a time, then stir in the vanilla. Dissolve baking soda in hot water. Add to batter along with salt. Stir in flour, chocolate chips, and nuts. Drop by large spoonfuls onto ungreased pans. <br><br>3. Bake for about 10 minutes in the preheated oven, or until edges are nicely browned. ",
+            "ingredients": ["1 cup butter, softened", "2 tsp hot water", "1/2 tsp salt", "1 cup white sugar", "3 cups flour", "1 cup packed brown sugar", "2 cups semisweet chocolate chips", "2 eggs", "1 cup chopped walnuts"],
+            "time": "1hr",
+            "rating": "4",
+            "image": "cookie.jpg",
+            "source": "All Recipes.com"
+        }, 
+
+        {
+            "name": "Caramel Popcorn",
+            "category": "Snack",
+            "instructions": "1. Preheat oven to 250 degrees F (95 degrees C). Place popcorn in a very large bowl.<br><br>2. In a medium saucepan over medium heat, melt butter. Stir in brown sugar, corn syrup and salt. Bring to a boil, stirring constantly. Boil without stirring 4 minutes. Remove from heat and stir in soda and vanilla. Pour in a thin stream over popcorn, stirring to coat.<br><br>3. Place in two large shallow baking dishes and bake in preheated oven, stirring every 15 minutes, for 1 hour. Remove from oven and let cool completely before breaking into pieces.",
+            "ingredients": ["1 cup butter", "2 cups brown sugar", "1/2 cup corn syrup", "1 tsp salt", "1/2 tsp baking soda", "1 tsp vanilla extract", "5 quarts popped popcorn"],
+            "time": "1hr 30min",
+            "rating": "5",
+            "image": "popcorn.jpg",
+            "source": "All Recipes.com"
+        }, 
+
+        {
+            "name": "Caesar Salad",
+            "category": "Lunch",
+            "instructions": "1. In a medium bowl, whisk together the egg yolk, lemon juice, garlic, Worcestershire, pepper flakes, mustard, and anchovies. Slowly whisk in the oils to emulsify. Season, to taste, with salt and pepper.<br><br>2. Place the lettuce in a large bowl. Sprinkle with Parmesan and black pepper. Drizzle with desired amount of dressing and toss well. Sprinkle top with croutons.",
+            "ingredients": ["1 egg yolk", "3 Tbsp fresh lemon juice", "1 Tbsp minced garlic", "1/2 tsp Worcestershire sauce", "1/4 tsp red pepper flakes", "1 Tbsp Dijon mustard", "2 anchovy fillets, mashed", "Scant 1 cupt vegetable oil", "1/3 cup extra-virgin olive oil", "Salt and freshly ground black pepper", "1 large head romaine lettuce, cut", "freshly grated Parmesan", "2 cups croutons"],
+            "time": "20min",
+            "rating": "5",
+            "image": "salad.jpg",
+            "source": "Food Network"
+        }, 
+
+        {
+            "name": "Granola Bars",
+            "category": "Snack",
+            "instructions": "1. Preheat oven to 350 degrees F (175 degrees C). Grease a 9x13 inch pan.<br><br>2. In a large bowl, mix together the oats, sweetened condensed milk, butter, coconut, almonds, chocolate chips and cranberries with your hands until well blended. Press flat into the prepared pan.<br><br>3. Bake for 20 to 25 minutes in the preheated oven, depending on how crunchy you want them. Lightly browned just around the edges will give you moist, chewy bars. Let cool for 5 minutes, cut into squares then let cool completely before serving.",
+            "ingredients": ["3 cups quick-cooking oats", "1 an sweetened condensed milk", "2 Tbsp butter, melted", "1 cup flaked coconut", "1 cup sliced almonds", "1 cup miniature semisweet chocolate chips", "1/2 cup sweented dried cranberries"],
+            "time": "35min",
+            "rating": "3",
+            "image": "granola.jpg",
+            "source": "All Recipes.com"
         }
         
     ]

@@ -118,10 +118,24 @@ section.welcome {
     background-position: center;
     margin: 0 -2vw; }
 
-section#all-recipes-section h2 {
-  color: #7B7B7B;
-  font-family: lato, sans-serif;
-  margin: 0; }
+section#all-recipes-section div div {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap; }
+  section#all-recipes-section div div label {
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 15px;
+    color: #7B7B7B;
+    cursor: pointer; }
+  section#all-recipes-section div div label.checked {
+    border: 2px solid #7B7B7B;
+    color: #F3644B; }
+  section#all-recipes-section div div input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0;
+    margin: 0; }
 
 #recipe-list, #favorite-recipes-list {
   display: grid;
@@ -149,7 +163,8 @@ section#all-recipes-section h2 {
     #recipe-list figcaption h2, #favorite-recipes-list figcaption h2 {
       font-size: 0.875rem;
       color: #F3644B;
-      margin: 0; }
+      margin: 0;
+      font-family: lato, sans-serif; }
     #recipe-list figcaption p, #favorite-recipes-list figcaption p {
       color: #7B7B7B;
       font-size: 0.875rem;
