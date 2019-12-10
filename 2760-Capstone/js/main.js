@@ -90,9 +90,8 @@ let updateFavoriteButton = (recipe) => {
 }
 
 
-// --------------------------------------------------------------
 
-// MENU
+// MENU --------------------------------------------------------------
 let menuButton = document.querySelector('#menu-button')
 
 let menuToggle = () => {
@@ -120,7 +119,7 @@ document.querySelectorAll('nav ul li a').forEach(menuItem => {
 
 
 
-// VIEW RECIPES button; displays recipe cards on click
+// VIEW RECIPES button; displays recipe cards on click ----------------
 document.querySelector('#view-recipes').addEventListener('click', function() {
     deleteChildNodes('#recipe-list')
     recipeData.forEach(recipe => {
@@ -129,7 +128,7 @@ document.querySelector('#view-recipes').addEventListener('click', function() {
 })
 
 
-// SORTING RECIPE CARDS
+// SORTING RECIPE CARDS  --------------------------------------------------------------
 sortLabels = document.querySelectorAll('#all-recipes-section label')
 sortLabels.forEach(label => {
     label.addEventListener('click', () => {
@@ -144,20 +143,18 @@ sortLabels.forEach(label => {
                 createRecipeCards(recipe, '#recipe-list')
             })
         } else {
-            let newArray = recipeData.filter(recipe => recipe.category == label.textContent)
+            let newArray = recipeData.filter(recipe => recipe.category.toLowerCase() == label.textContent.toLowerCase())
             deleteChildNodes('#recipe-list')
             newArray.forEach(recipe => {
-            createRecipeCards(recipe, '#recipe-list')
+                createRecipeCards(recipe, '#recipe-list')
             })
         }
-
-        
     })
 })
 
 
 
-// DISPLAYS RECIPE DETAILS
+// DISPLAYS RECIPE DETAILS --------------------------------------------------------------
 let displayedRecipe
 let showInstructions = (recipe) => {
     if (document.querySelector('#view-recipe-section').classList != 'show-recipe') {
@@ -184,6 +181,7 @@ let showInstructions = (recipe) => {
     displayedRecipe = recipe
 }
 
+
 // CLOSES RECIPE DETAILS
 let hideInstructions = () => {
     document.querySelector('#view-recipe-section').classList.toggle('show-recipe')
@@ -193,7 +191,7 @@ let hideInstructions = () => {
 document.querySelector('#close-button').addEventListener('click', hideInstructions)
 
 
-// ADD TO FAVORITES BUTTON
+// ADD TO FAVORITES BUTTON --------------------------------------------------------------
 let addFavoriteButton = document.querySelector('#add-to-favorites')
 addFavoriteButton.addEventListener('click', function() {
     if (favorites.indexOf(displayedRecipe) === -1) {
@@ -213,7 +211,7 @@ addFavoriteButton.addEventListener('click', function() {
 })
 
 
-// USER ADDS RECIPES
+// USER ADDS RECIPES --------------------------------------------------------------
 let newRecipeName = document.querySelector('#new-recipe-name')
 let newRecipeCategory = document.querySelector('#new-recipe-category')
 let newRecipeIngredients = document.querySelector('#new-recipe-ingredients')
@@ -254,6 +252,11 @@ createRecipeButton.addEventListener('click', () => {
         recipeData.forEach(recipe => {
             createRecipeCards(recipe, '#recipe-list')
         })
+
+        sortLabels.forEach(label => {
+            label.classList = ""
+        })
+        document.querySelector('#all-label').classList = "checked"
 
         userRecipe.alert()
     } 
